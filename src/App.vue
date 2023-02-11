@@ -17,7 +17,7 @@
   const useHidden = (bool) => {
     return (hiddenSate.value = bool);
   };
-
+  // 正在播放的列表
   const playingIds = ref([]);
   const isScrolling = ref(false);
 
@@ -73,7 +73,7 @@
       // 播放新视频
       playAll(ids);
     } else {
-      playAll(playingIds.current);
+      playAll(playingIds.value);
     }
     // console.log("end");
     isScrolling.value = false;
