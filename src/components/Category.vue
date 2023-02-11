@@ -2,9 +2,8 @@
   import { ref, toRefs } from "vue";
   const props = defineProps({
     list: Array,
-    scroll: Function,
   });
-  const { list, scroll } = toRefs(props);
+  const { list } = toRefs(props);
 </script>
 
 <template>
