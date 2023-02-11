@@ -1,7 +1,15 @@
-# Vue 3 + Vite
+- hg-video-stream
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+  写代码的海怪，b站视频流项目练手，通过vue3模仿实现
 
-## Recommended IDE Setup
+  视频地址：
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+  https://www.bilibili.com/video/BV1sW4y1M7VV/?spm_id_from=333.999.0.0&vd_source=d5bf0106bb3d75845119bd62682cb3e0
+
+  安装：
+
+  `npm install`
+
+  运行
+
+  `npm run dev`
