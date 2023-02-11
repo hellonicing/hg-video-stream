@@ -2,15 +2,16 @@
   import { ref, toRefs } from "vue";
   const props = defineProps({
     list: Array,
+    scroll: Function,
   });
-  const { list } = toRefs(props);
+  const { list, scroll } = toRefs(props);
 </script>
 
 <template>
   <div class="category">
     <ul>
       <li v-for="item in list" :key="item.id">
-        <video autoPlay loop muted :src="item.src"></video>
+        <video :data-video-id="item.id" loop muted :src="item.src"></video>
       </li>
     </ul>
   </div>
@@ -21,7 +22,7 @@
     overflow: auto; // 滚动
     ul {
       display: flex;
-      padding: 16px;
+      padding: 16px 0;
       li {
         list-style: none;
         margin-right: 12px;
